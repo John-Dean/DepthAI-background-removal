@@ -97,7 +97,7 @@ class DepthAIBackgroundRemoval():
 		
 		depth_map /= 1000.0
 		
-		depth_map[depth_map > self.max_depth_meters] = self.min_depth_meters
+		depth_map[depth_map > self.max_depth_meters] = self.max_depth_meters
 		depth_map[depth_map < self.min_depth_meters] = self.min_depth_meters
 		
 		self.previous_depth_maps.append(depth_map)
