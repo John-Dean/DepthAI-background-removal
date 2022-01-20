@@ -1,0 +1,3 @@
+numpy
+depthai==2.14.1.0
+open3d==0.14.1.0
